@@ -9,3 +9,5 @@ entities).
 
 There's a bit of documentation in the `doc` directory about the ESPI
 standard, mostly figured out from public sources and actual ESPI files.
+
+This repository was forked from [GreenButtonAlliance/greenbutton-python](https://github.com/GreenButtonAlliance/greenbutton-python) which has a fork ancestry about 4 levels deep.

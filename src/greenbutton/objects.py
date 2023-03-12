@@ -11,10 +11,10 @@ from greenbutton import utils
 @functools.total_ordering
 class DateTimeInterval:
     def __init__(self, entity):
-        self.duration = getEntity(
+        self.duration = utils.getEntity(
             entity, "espi:duration", lambda e: datetime.timedelta(seconds=int(e.text))
         )
-        self.start = getEntity(
+        self.start = utils.getEntity(
             entity,
             "espi:start",
             lambda e: datetime.datetime.fromtimestamp(
@@ -40,16 +40,18 @@ class DateTimeInterval:
 class IntervalReading:
     def __init__(self, entity, parent):
         self.intervalBlock = parent
-        self.cost = getEntity(entity, "espi:cost", lambda e: int(e.text) / 100000.0)
-        self.timePeriod = getEntity(
+        self.cost = utils.getEntity(
+            entity, "espi:cost", lambda e: int(e.text) / 100000.0
+        )
+        self.timePeriod = utils.getEntity(
             entity, "espi:timePeriod", lambda e: DateTimeInterval(e)
         )
-        self._value = getEntity(entity, "espi:value", lambda e: int(e.text))
+        self._value = utils.getEntity(entity, "espi:value", lambda e: int(e.text))
 
         self.readingQualities = set(
             [
                 ReadingQuality(rq, self)
-                for rq in entity.findall("espi:ReadingQuality", ns)
+                for rq in entity.findall("espi:ReadingQuality", utils.ns)
             ]
         )
 

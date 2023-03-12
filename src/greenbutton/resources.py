@@ -33,7 +33,9 @@ class UsagePoint(Resource):
         )
         self.status = utils.getEntity(obj, "espi:status", lambda e: int(e.text))
         self.serviceCategory = utils.getEntity(
-            obj, "./espi:ServiceCategory/espi:kind", lambda e: ServiceKind(int(e.text))
+            obj,
+            "./espi:ServiceCategory/espi:kind",
+            lambda e: enums.ServiceKind(int(e.text)),
         )
 
         self.meterReadings = set()
@@ -87,7 +89,7 @@ class MeterReading(Resource):
 
     def addIntervalBlock(self, intervalBlock):
         assert self.isParentOf(intervalBlock)
-        bisect.iutils.nsort(self.intervalBlocks, intervalBlock)
+        bisect.insort(self.intervalBlocks, intervalBlock)
         intervalBlock.meterReading = self
 
 
@@ -105,11 +107,11 @@ class ReadingType(Resource):
         self.commodity = utils.getEntity(
             obj, "espi:commodity", lambda e: enums.CommodityType(int(e.text))
         )
-        self.coutils.nsumptionTier = utils.getEntity(
-            obj,
-            "espi:coutils.nsumptionTier",
-            lambda e: enums.Coutils.nsumptionTierType(int(e.text)),
-        )
+        # self.coutils.nsumptionTier = utils.getEntity(
+        #     obj,
+        #     "espi:coutils.nsumptionTier",
+        #     lambda e: enums.Coutils.nsumptionTierType(int(e.text)),
+        # )
         self.currency = utils.getEntity(
             obj, "espi:currency", lambda e: enums.CurrencyCode(int(e.text))
         )

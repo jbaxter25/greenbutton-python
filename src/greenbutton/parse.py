@@ -65,10 +65,11 @@ if __name__ == "__main__":
                     end="",
                 )
                 if ir.cost is not None:
-                    print(" (%s%s)" % (ir.cost_symbol, ir.cost))
+                    print(" (%s%s)" % (ir.cost_symbol, ir.cost), end="")
                 if len(ir.readingQualities) > 0:
                     print(
                         "[%s]"
                         % ", ".join([rq.quality.name for rq in ir.readingQualities])
                     )
-                print
+                else:
+                    print("")

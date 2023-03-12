@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>urn:uuid:07709185-26eb-4ecd-9259-7723d080f200</id>
+    <title>Pacificorp Green button Download Feed - Interval</title>
+    <updated>2023-03-12T10:52:02.26Z</updated>
+    <link rel="self" href="/ThirdParty/83e269c1/Batch" />
+    <entry>
+        <id>urn:uuid:b7929597-834f-469b-a23e-9353d9220366</id>
+        <link rel="self" href="/User/9b6c7063/UsagePoint/01" />
+        <link rel="up" href="/User/9b6c7063/UsagePoint" />
+        <link rel="related" href="LocalTimeParameters/01" />
+        <link rel="related" href="/User/9b6c7063/UsagePoint/01/MeterReading" />
+        <title>741 NE TIERRA RD BEND OR</title>
+        <content>
+            <ns1:UsagePoint xmlns:ns1="http://naesb.org/espi">
+                <ns1:ServiceCategory>
+                    <ns1:kind>0</ns1:kind>
+                </ns1:ServiceCategory>
+            </ns1:UsagePoint>
+        </content>
+        <published>2023-03-12T10:52:02.26Z</published>
+        <updated>2023-03-12T10:52:02.26Z</updated>
+    </entry>
+    <entry>
+        <id>urn:uuid:5bd7a33a-7fd6-4076-8346-9526d5137da3</id>
+        <link rel="self" href="LocalTimeParameters/01" />
+        <link rel="up" href="LocalTimeParameters" />
+        <title>DST For North America</title>
+        <content>
+            <ns1:LocalTimeParameters xmlns:ns1="http://naesb.org/espi">
+                <ns1:dstEndRule>B40E2000</ns1:dstEndRule>
+                <ns1:dstOffset>3600</ns1:dstOffset>
+                <ns1:dstStartRule>360E2000</ns1:dstStartRule>
+                <ns1:tzOffset>-28800</ns1:tzOffset>
+            </ns1:LocalTimeParameters>
+        </content>
+        <published>2023-03-12T10:52:02.26Z</published>
+        <updated>2023-03-12T10:52:02.26Z</updated>
+    </entry>
+    <entry>
+        <id>urn:uuid:32b81f32-671c-47a5-9ed7-ed022d2329c0</id>
+        <link rel="self" href="/User/9b6c7063/UsagePoint/01/MeterReading/01" />
+        <link rel="up" href="/User/9b6c7063/UsagePoint/01/MeterReading" />
+        <link rel="related" href="/ReadingType/1" />
+        <link rel="related" href="/User/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock" />
+        <title>Hourly/ Energy Consumption</title>
+        <content>
+            <ns1:MeterReading xmlns:ns1="http://naesb.org/espi" />
+        </content>
+        <published>2023-03-12T10:52:02.26Z</published>
+        <updated>2023-03-12T10:52:02.26Z</updated>
+    </entry>
+    <entry>
+        <id>urn:uuid:02e23a45-74e0-4a17-8201-4c33630a8f6f</id>
+        <link rel="self" href="/ReadingType/1" />
+        <link rel="up" href="/ReadingType" />
+        <title>Energy Delivered (kWh)</title>
+        <content>
+            <ns1:ReadingType xmlns:ns1="http://naesb.org/espi">
+                <ns1:commodity>1</ns1:commodity>
+                <ns1:currency>840</ns1:currency>
+                <ns1:dataQualifier>12</ns1:dataQualifier>
+                <ns1:flowDirection>1</ns1:flowDirection>
+                <ns1:intervalLength>3600</ns1:intervalLength>
+                <ns1:kind>12</ns1:kind>
+                <ns1:powerOfTenMultiplier>3</ns1:powerOfTenMultiplier>
+                <ns1:timeAttribute>32</ns1:timeAttribute>
+                <ns1:uom>72</ns1:uom>
+            </ns1:ReadingType>
+        </content>
+        <published>2023-03-12T10:52:02.26Z</published>
+        <updated>2023-03-12T10:52:02.26Z</updated>
+    </entry>
+    <entry>
+        <id>urn:uuid:e6249df5-7440-43fe-957a-a3aa6ff9f62b</id>
+        <link rel="self" href="/User/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock/173" />
+        <link rel="up" href="/User/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock" />
+        <content>
+            <ns1:IntervalBlock xmlns:ns1="http://naesb.org/espi">
+                <ns1:interval>
+                    <ns1:duration>86400</ns1:duration>
+                    <ns1:start>1678435200</ns1:start>
+                </ns1:interval>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678438800</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678442400</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678446000</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678449600</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678453200</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678456800</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678460400</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678464000</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>1</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678467600</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678471200</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678474800</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678478400</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678482000</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678485600</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678489200</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678492800</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678496400</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>1</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678500000</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>1</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678503600</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>1</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678507200</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>1</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678510800</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>1</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678514400</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>1</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678518000</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+                <ns1:IntervalReading>
+                    <ns1:timePeriod>
+                        <ns1:duration>3600</ns1:duration>
+                        <ns1:start>1678521600</ns1:start>
+                    </ns1:timePeriod>
+                    <ns1:value>0</ns1:value>
+                </ns1:IntervalReading>
+            </ns1:IntervalBlock>
+        </content>
+        <published>2023-03-12T10:52:02.26Z</published>
+        <updated>2023-03-12T10:52:02.26Z</updated>
+    </entry>
+</feed>

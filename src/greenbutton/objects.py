@@ -119,16 +119,16 @@ class IntervalReading:
         ):
             return self.intervalBlock.meterReading.readingType.uom
         else:
-            return UomType.notApplicable
+            return enums.UomType.notApplicable
 
     @property
     def value_symbol(self):
-        return UOM_SYMBOLS[self.value_units]
+        return enums.UOM_SYMBOLS[self.value_units]
 
     @property
     def value_uom_id(self):
-        if self.value_units in UOM_IDS:
-            return UOM_IDS[self.value_units]
+        if self.value_units in enums.UOM_IDS:
+            return enums.UOM_IDS[self.value_units]
         else:
             return None
 
@@ -136,6 +136,6 @@ class IntervalReading:
 class ReadingQuality:
     def __init__(self, entity, parent):
         self.intervalReading = parent
-        self.quality = getEntity(
-            entity, "espi:quality", lambda e: QualityOfReading(int(e.text))
+        self.quality = utils.getEntity(
+            entity, "espi:quality", lambda e: enums.QualityOfReading(int(e.text))
         )
